@@ -1,0 +1,440 @@
+*{
+    font-family:  "Libre Baskerville", serif;
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+    background-image: url('https://wallpaperbat.com/img/30207768-indian-aesthetic-palace-wallpaper.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+@media (max-width: 767px) {
+    #main {
+        background-attachment: scroll; /* Prevents fixed background issues on mobile */
+        background-position: top center; /* Centers image on small screens */
+    }
+}
+.navbar{
+    background-color: black;
+}
+#heading{   
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+}
+li i{
+    color: whitesmoke;
+}
+.navbar:hover{
+    background-color: transparent;
+}
+.navbar-nav .nav-link:hover {
+    color: red !important;
+}
+.home {
+    margin: 250px 0px 0px 0px;
+}
+.home h1{
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    font-size: 90px;
+    color: white;
+}
+@media (max-width:767px){
+    .home h1{
+        text-align: center;
+    }
+}
+#destination{
+    margin-top: 220px;
+    position: relative;
+}
+@media (max-width:767px){
+    #destination{
+        text-align: center;
+        margin-top: 150px;
+    }
+}
+/* #destination .carouselslide{
+    bottom: 0;
+} */
+.carousel-heading {
+    position: absolute;
+    top: 90px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment */
+    z-index: 10; /* Ensure it's above the carousel */
+    color:white; /* Adjust color to contrast with the carousel */   
+}
+#destination h1{
+    font-size: 100px;
+    font-weight: 800;
+}
+#destination h4{
+    font-size: 40px;
+    padding-top: 120px;
+}
+@media (max-width:767px){
+    #destination h1{
+        font-size: 30px;
+    }
+    #destination h4{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+}
+.carousel-button{
+    position: absolute;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    bottom: 30px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment */
+    z-index: 10; /* Ensure it's above the carousel */
+}
+#carouselExampleCaptions {
+    width: 100%; /* Set a fixed width */
+    height: 100vh; /* Set a fixed height */
+    margin: auto; /* Center the carousel horizontally */
+}
+#carouselExampleCaptions .carousel-item img {
+    width: 100%; /* Stretch image to match container width */
+    height: 100vh; /* Stretch image to match container height */
+    object-fit: cover; /* Maintain aspect ratio and crop if needed */
+}
+.carousel-caption{
+    bottom: 100px;/* Position above buttons */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    width: 200px;
+}
+
+/* Style for the previous button */
+.carousel-control-prev {
+    position: absolute;
+    left: 30%; /* Position it at the left side */
+    top: 60%; /* Position it at the bottom */
+    z-index: 10;
+}
+/* Style for the next button */
+.carousel-control-next {
+    position: absolute;
+    right: 30%; /* Position it at the right side */
+    top: 60%; /* Position it at the bottom */
+    z-index: 10;
+}
+/* Optional: Customize the button size and appearance */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(5, 5, 5, 0.975); /* Semi-transparent background */
+}
+@media (max-width:767px){
+    .carousel-control-prev{
+        left: 10%;
+        top: 65%;
+    }
+    .carousel-control-next{
+        right: 10%;
+        top: 65%;
+    }
+}
+
+#story{
+    background-image: url('https://t4.ftcdn.net/jpg/02/99/54/79/360_F_299547932_8jfkuH2kuqBRoMbGsXnQsXvaXjlkWcGV.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(243, 247, 243);
+}
+.container{
+    margin: 100px 0px 0px 0px;    
+}
+.container .slide{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.container img{
+    max-width: 100%;
+    max-height: 100%;
+    /* object-fit: fill; */
+}
+@media (max-width:767px){
+    .container .slide{
+        width: 100%;
+    }   
+    #story{
+        padding: 30px;
+    }
+}
+.container h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.container .para{
+    text-align: justify;
+    font-size: 15px;
+    padding-bottom: 100px;
+}
+#hr{
+    width: 30%;
+    height: 1%;
+    margin: 5px 0px 30px 0px;
+    border: 3px solid rgb(88, 36, 5);
+}
+#travel-card{
+    background-image: url('https://media.gettyimages.com/id/1361013874/video/white-paper-style-pattern-and-textured-animation-background-stock-video.jpg?s=640x640&k=20&c=QmCxpjtfosdva7HdMYwSMAHVA7HZe6Zxf5sOV4mZRWo=');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+@media (max-width: 768px) {
+    #travel-card {
+        
+        padding: 20px;
+    }
+    #travel-heading h1{
+        font-size: 35px !important;    
+    }
+    #travel-heading h5{
+        font-size: 20px !important;
+        /* padding-bottom: 0px !important;     */
+    }
+}
+#travel-heading h1{
+    margin: 100px 0px 20px 0px;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(142, 9, 9);
+}
+#travel-heading h5{
+    margin: 0px 0px 60px 0px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(142, 9, 9);
+}
+@media (max-width:768px){
+    #travel-card .row{
+        padding: 0 10px !important;
+        flex-direction: column !important;
+    }
+    .col-12{
+        width: 100% !important;
+        padding: 5px 0px !important;
+    }
+    /* .card{
+        width: 100% !important;
+    } */
+    .card img{
+        max-height: 400px ;
+        object-fit: cover;
+    }
+    .card-title{
+        font-size: 20px !important;
+    }
+    .card-text{
+        font-size: 10px !important;
+    }
+    .card .btn{
+        font-size: 10px !important;
+        padding: 6px 12px;
+    }   
+}
+.card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card img{
+    max-width: 100%;
+    max-height: 400px;
+    object-fit:fill;
+}
+#travel-card .row{
+    padding: 0px 100px 50px 100px;
+}
+.col-6{
+    padding: 30px 30px;
+}
+.card-title{
+    font-size: 30px;
+    font-weight: 800;
+}
+.card-text{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 600;
+}
+.card .btn{
+    background-color: rgb(190, 8, 8);
+    color: white;
+}
+ /* .col-6:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease; 
+} */
+#booking{
+    background-image: url('https://media.istockphoto.com/id/1167863983/vector/horizontal-vector-illustration-of-an-empty-light-blue-grungy-textured-background.jpg?s=612x612&w=0&k=20&c=AgBWyrJP5O0GlKOGwzO5IXl6NrspMIR7q1Z7kYq8YsI=');
+    padding-bottom: 100px;
+} 
+@media (max-width: 768px) {
+    #booking{
+        padding: 0px 30px 100px 30px;
+    }
+    #booking-heading h1{
+        font-size: 30px !important;    
+    }
+    #booking-heading h5{
+        font-size: 20px !important;
+        /* padding-bottom: 0px !important;     */
+    }
+}
+#booking-heading h1{
+    margin: 100px 0px 20px 0px;
+    font-size: 60px;
+    font-weight: 900;
+    color:rgb(89, 53, 53);
+}
+#booking-heading h5{
+    padding: 0px 0px 20px 0px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(89, 53, 53);
+}
+@media (max-width:797px){
+    .custom-prev-btn{
+        left: 30% !important; /* Position it at the left side */
+        top: 100% !important; /* Position it at the bottom */
+        z-index: 10;
+        background-color: black;
+        
+    }
+    .custom-next-btn{
+        right: 30% !important; /* Position it at the left side */
+        top: 100% !important; /* Position it at the bottom */
+        z-index: 10;
+        background-color: black;
+        
+    }
+}
+
+.custom-prev-btn{
+    left: 45% ; /* Position it at the left side */
+    top: 100% ; /* Position it at the bottom */
+    z-index: 10;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.custom-next-btn{
+    right: 45%; /* Position it at the left side */
+    top: 100% ; /* Position it at the bottom */
+    z-index: 10;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+/* .card:hover{
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+} */
+#review{
+    padding-bottom: 100px;
+    background-image: url('https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8189.jpg');
+}
+
+@media (max-width: 798px)  {  
+    /* Reduce font size for heading */
+    #review-heading h1 {
+        font-size: 30px !important;
+    }
+
+    /* Adjust carousel items for better spacing */
+    .carousel-item .row {
+        margin: 0px 20px; /* Less margin for smaller screens */
+    }
+
+    /* Adjust card width */
+    .custom-card {
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 575px) {  
+    /* Stack items vertically on extra small screens */
+    .col-6 {
+        flex: 0 0 100%; /* Full width */
+        max-width: 100%;
+    }
+}
+
+#review-heading h1{
+    margin: 100px 0px 60px 0px;
+    font-size: 40px;
+    font-weight: 900;
+    color:rgb(79, 52, 52);
+}
+
+
+.card #custom-img{
+    /* border: 3px solid red; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.card #custom-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.custom-card:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+#custom-acc{
+    width: 100%;
+    height: auto;
+    margin: 100px 80px 100px 80px;
+}
+#accordion{
+    background-image: url('https://media.istockphoto.com/id/1370544962/photo/white-paper-background-fibrous-cardboard-texture-for-scrapbooking.webp?a=1&b=1&s=612x612&w=0&k=20&c=Y2a03EKAQkXKVqWZ2_SFfu8KxtZTv-5Sq6TF4bi_Ps0=');
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+#footer-content{
+    background-color: rgba(0, 0, 0, 0.827);
+    padding: 100px 50px 20px 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-icons li{
+    display: inline-block;
+    padding: 0px 40px 0px 40px;   
+}
+@media (max-width:798px){
+    #footer-content{
+        display: block;
+        text-align: center;
+        font-size: 10px;
+    }
+    #footer-content ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
